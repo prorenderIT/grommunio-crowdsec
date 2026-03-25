@@ -71,7 +71,7 @@ cleanup_backups_keep_last() {
 # -------------------------------
 
 # Standardwert: 1 Backup behalten
-DEFAULT_KEEP=0
+DEFAULT_KEEP=1
 
 read -p "[grommunio-crowdsec] [+] Wie viele Backups sollen behalten werden (0 für keine)? [Standard: $DEFAULT_KEEP] " USER_KEEP
 
