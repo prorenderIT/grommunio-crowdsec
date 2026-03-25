@@ -37,6 +37,7 @@ This script installs and configures CrowdSec to work seamlessly with grommunio s
   * IMAP
   * ActiveSync
   * DAV services
+  * Admin- and webadmin
 * Detection of authentication failures
 * Brute-force protection
 * Simple setup for openSUSE
@@ -70,7 +71,7 @@ If you plan to use this in production, I offer:
 * ✔️ Custom detection rules
 * ✔️ Monitoring & alerting
 * ✔️ Maintenance & updates
-* ✔️ SLA-based support
+* ✔️ SLA-based IT support
 
 👉 [https://www.prorender.de](https://www.prorender.de)
 
