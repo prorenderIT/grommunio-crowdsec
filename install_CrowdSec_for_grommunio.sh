@@ -167,7 +167,7 @@ statics:
   - meta: service
     value: grommunio
   - meta: log_type
-    value: auth_failed
+    value: grommunio_auth_failed
   - meta: source_ip
     expression: "evt.Parsed.source_ip"
 EOF
@@ -183,7 +183,7 @@ type: leaky
 name: custom/grommunio-bruteforce
 description: "Detect bruteforce on grommunio services"
 
-filter: "evt.Meta.log_type == 'auth_failed' && evt.Meta.source_ip != '' && evt.Meta.service == 'grommunio'"
+filter: "evt.Meta.log_type == 'grommunio_auth_failed' && evt.Meta.source_ip != '' && evt.Meta.service == 'grommunio'"
 
 groupby: evt.Meta.source_ip
 
