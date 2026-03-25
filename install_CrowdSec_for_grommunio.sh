@@ -183,7 +183,7 @@ type: leaky
 name: custom/grommunio-bruteforce
 description: "Detect bruteforce on grommunio services"
 
-filter: "evt.Meta.log_type == 'auth_failed' && evt.Meta.source_ip != ''"
+filter: "evt.Meta.log_type == 'auth_failed' && evt.Meta.source_ip != '' && evt.Meta.service == 'grommunio'"
 
 groupby: evt.Meta.source_ip
 
